@@ -63,3 +63,15 @@ nav ul li{
     font-size: 1.3em;
     
 }
+main ul li img{
+     width: 100%;
+     height: 300px;
+}
+main ul { 
+max-width: 60%;
+
+}
+main ul li{
+    max-width: 35%;
+   display: inline-block;
+}
