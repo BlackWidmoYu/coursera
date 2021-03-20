@@ -1,0 +1,31 @@
+.cont{
+    margin: 0;
+    padding-top: 148px;
+    padding-left:122px ;
+    font-family: Roboto;
+    background-color:#23424A;
+    color: white;
+    padding-bottom: 147px;
+}
+h1{
+    font-size: 48px;
+}
+h1,p{
+    max-width: 60%;
+}
+p{
+    padding-bottom: 30px;
+    font-size: 21px;
+}
+button{
+    width: 12em;
+    height: 2.5em;
+    border-radius: 33px;
+    background-color: #38CFD9;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 150.19%;
+text-transform: uppercase;
+}
