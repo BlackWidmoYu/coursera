@@ -6,6 +6,7 @@
     background-color:#23424A;
     color: white;
     padding-bottom: 147px;
+    display: flex;
 }
 h1{
     font-size: 48px;
