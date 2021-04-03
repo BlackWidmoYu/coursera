@@ -1,0 +1,2 @@
+pliku do kursu mozna dostac tutaj
+git clone https://github.com/wesbos/JavaScript30.git
