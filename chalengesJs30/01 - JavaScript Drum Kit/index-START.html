@@ -58,7 +58,23 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+       window.addEventListener('keydown',function(e){
+        //console.log(e);
+        const sound = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key =  document.querySelector(`div[data-key="${e.keyCode}"]`);
 
+       if(!sound)return; // dzieku temu nie wywala errorow jesli nacisniemy inne guziki niz obslugiwane
+      
+       // console.log(sound);
+        sound.currentTime = 0 ; //cofa dzwiek do poczatku przy kilkakrotnym nacisnieciu przycisku
+        sound.play();
+        key.classList.add("playing");
+        key.addEventListener('transitionend' , function(){
+          key.classList.remove("playing");
+        })
+      
+       
+       })
 </script>
 
 
