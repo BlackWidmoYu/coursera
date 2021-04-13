@@ -96,6 +96,30 @@
   </div>
 
 <script>
+  let lastElement ;
+  function handle(e){
+    //console.log("good");
+    let ibetween =false ;
+    if(e.shiftKey && this.checked){
+      inputs.forEach(input=>{
+        if(input===this || input===lastElement){
+          console.log(e);
+          ibetween=!ibetween;
+        }
+        if(ibetween){
+          input.checked=true;
+        }
+      })
+    }
+
+
+    lastElement=this ;
+    //console.log(e.shiftKey);
+  }
+  //console.log(lastElement);
+
+  const inputs = document.querySelectorAll('input');
+  inputs.forEach(input=>input.addEventListener('click',handle));
 </script>
 </body>
 </html>
