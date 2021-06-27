@@ -7,6 +7,25 @@
 </head>
 <body>
 <script>
+  const seq = [];
+  const secret = 'siema';
+  window.addEventListener('keydown',(e)=>{
+    console.log(e.key);
+    seq.push(e.key);
+   // console.log(seq);
+    //console.log(secret.length);
+    seq.splice(-secret.length-1,seq.length - secret.length);
+  // if (pressed.join('').includes(secretCode)) {
+  //   console.log('DING DING!');
+  //   cornify_add();
+  // }
+  if(seq.join('')==secret){
+    console.log('DING DING!');
+    cornify_add();
+  }
+  console.log(seq);
+
+  })
 </script>
 </body>
 </html>
