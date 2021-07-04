@@ -1,0 +1,10 @@
+.testPlace{
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: absolute;
+    left: 800px;
+    top: 100px;
+   
+ 
+}
